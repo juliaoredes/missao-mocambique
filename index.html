@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missão Moçambique - Construindo o Futuro Através da Informática</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="hero">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <span class="badge">Projeto Missionário</span>
+                <h1>Transformando Vidas em Moçambique</h1>
+                <p>Junte-se a nós na missão de levar esperança, dignidade e conhecimento para centenas de crianças na África através da nova Sala de Informática.</p>
+                <a href="#doar" class="btn btn-primary">Quero Contribuir</a>
+            </div>
+            <div class="hero-video">
+                <video controls poster="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=600" autoplay muted loop>
+                    <source src="video/video-projeto.mp4" type="video/mp4">
+                    Seu navegador não suporta a reprodução de vídeos.
+                </video>
+            </div>
+        </div>
+    </header>
+
+    <section class="sobre">
+        <div class="container">
+            <div class="sobre-content">
+                <h2>O Desafio: A Sala de Informática</h2>
+                <p>Uma das formas mais poderosas de transformar o futuro de uma comunidade é através da educação digital. Nosso objetivo atual é iniciar uma **Sala de Informática** estruturada para ensinar as crianças, preparando-as para novas oportunidades de vida.</p>
+                <p>Sua ajuda fará a diferença na aquisição de computadores, periféricos e na infraestrutura necessária para que as aulas aconteçam em nome de Jesus.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="galeria">
+        <div class="container">
+            <h2 class="section-title">O Impacto do Trabalho no Campo</h2>
+            <div class="foto-grid">
+                <div class="foto-item"><img src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?q=80&w=500" alt="Crianças em Moçambique"></div>
+                <div class="foto-item"><img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=500" alt="Projeto Social Distribuição"></div>
+                <div class="foto-item"><img src="https://images.unsplash.com/photo-1484820540004-14229fe36ca4?q=80&w=500" alt="Momento com as Crianças"></div>
+                <div class="foto-item"><img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=500" alt="Educação e Futuro"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="doar" class="doacao">
+        <div class="container doacao-grid">
+            
+            <div class="pix-card">
+                <h3>Faça sua Doação via PIX</h3>
+                <p>Escaneie o QR Code ou copie a chave Pix abaixo para enviar sua contribuição direta.</p>
+                
+                <div class="qr-code">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=lucianopepicon@gmail.com" alt="QR Code Pix Inter">
+                </div>
+
+                <div class="pix-copiar">
+                    <label for="chave-pix">Chave PIX (E-mail):</label>
+                    <input type="text" id="chave-pix" value="lucianopepicon@gmail.com" readonly>
+                </div>
+                <p class="titular"><strong>Beneficiário:</strong> Luciano Pepicon da Fonseca</p>
+            </div>
+
+            <div class="form-card">
+                <h3>Confirme seu Apoio</h3>
+                <p>Após realizar o Pix, preencha os dados abaixo para enviar a notificação automática e receber nosso agradecimento por e-mail.</p>
+                
+                <form id="form-doacao" onsubmit="processarFormulario(event)">
+                    <div class="form-group">
+                        <label for="nome">Seu Nome Completo *</label>
+                        <input type="text" id="nome" required placeholder="Ex: João Silva">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Seu E-mail *</label>
+                        <input type="email" id="email" required placeholder="Ex: joao@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="valor">Valor da Contribuição (R$) *</label>
+                        <input type="number" id="valor" min="1" required placeholder="Ex: 50">
+                    </div>
+
+                    <button type="submit" class="btn btn-whatsapp">Confirmar e Avisar no WhatsApp</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Projeto Missionário Moçambique. "Há mais alegria em dar do que em receber."</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
