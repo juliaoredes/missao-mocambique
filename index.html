@@ -20,12 +20,8 @@
                 <a href="#doar" class="btn btn-primary">Quero Contribuir</a>
             </div>
             <div class="hero-video">
-                <iframe width="560" height="315" 
-                    src="https://www.youtube.com/embed/OQ1CsUfcHPk?si=6SrYvair1X5dK2C-" 
-                    title="YouTube video player" 
-                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                </iframe>
+                <iframe class="video-youtube video-exemplo" src="https://www.youtube.com/embed/OQ1CsUfcHPk?si=6SrYvair1X5dK2C-" title="Missão Moçambique" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
             </div>
         </div>
     </header>
@@ -44,10 +40,13 @@
         <div class="container">
             <h2 class="section-title">O Impacto do Trabalho no Campo</h2>
             <div class="foto-grid">
-                <div class="foto-item"><img src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?q=80&w=500" alt="Crianças em Moçambique"></div>
-                <div class="foto-item"><img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=500" alt="Projeto Social Distribuição"></div>
-                <div class="foto-item"><img src="https://images.unsplash.com/photo-1484820540004-14229fe36ca4?q=80&w=500" alt="Momento com as Crianças"></div>
-                <div class="foto-item"><img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=500" alt="Educação e Futuro"></div>
+                <div class="foto-item"><img src="imagens/Mocambique1.jpeg" alt="Crianças em Moçambique"></div>
+                <div class="foto-item"><img src="imagens/Mocambique2.jpeg" alt="Projeto Social Distribuição"></div>
+                <div class="foto-item"><img src="imagens/Mocambique3.jpeg" alt="Momento com as Crianças"></div>
+                <div class="foto-item"><img src="imagens/Mocambique4.jpeg" alt="Educação e Futuro"></div>
+                <div class="foto-item"><img src="imagens/Mocambique5.jpeg" alt="Momento com as Crianças"></div>
+                <div class="foto-item"><img src="imagens/Mocambique6.jpeg" alt="Educação e Futuro"></div>
+
             </div>
         </div>
     </section>
@@ -57,15 +56,16 @@
             
             <div class="pix-card">
                 <h3>Faça sua Doação via PIX</h3>
-                <p>Escaneie o QR Code ou copie a chave Pix abaixo para enviar sua contribuição direta.</p>
+                <p style="margin-bottom: 0.5rem;"><strong>Se estiver no computador:</strong> Abra o app do seu banco e escaneie o código abaixo.</p>
+                <p style="font-size: 0.85rem; color: #ef4444; margin-bottom: 1.5rem;">⚠️ Atenção: Escaneie direto pelo app do seu banco (evite usar a câmera normal do celular).</p>
                 
                 <div class="qr-code">
-                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=lucianopepicon@gmail.com" alt="QR Code Pix Inter">
+                    <img src="imagens/QRCode.jpeg" alt="QR Code Pix" width="200" height="200" style="object-fit: contain; display: block; margin: 0 auto;">
                 </div>
 
                 <div class="pix-copiar">
-                    <label for="chave-pix">Chave PIX (E-mail):</label>
-                    <input type="text" id="chave-pix" value="lucianopepicon@gmail.com" readonly>
+                    <label for="chave-pix"><strong>Se estiver no celular:</strong> Clique abaixo para copiar a chave</label>
+                    <input type="text" id="chave-pix" value="lucianopepicon@gmail.com" readonly onclick="copiarPix()" style="cursor: pointer; background-color: #f1f5f9; font-weight: bold;" title="Clique para copiar">
                 </div>
                 <p class="titular"><strong>Beneficiário:</strong> Luciano Pepicon da Fonseca</p>
             </div>
