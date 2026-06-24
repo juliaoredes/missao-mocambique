@@ -90,6 +90,28 @@ body {
     color: #ccc;
 }
 
+/* Estilização para o formato exato do exemplo em anexo */
+.video-exemplo {
+    width: 100%;
+    max-width: 100%;
+    /* Mantém a proporção padrão de vídeo (16:9) automaticamente em qualquer tela */
+    aspect-ratio: 16 / 9; 
+    height: auto;
+    
+    /* Cantos arredondados suaves */
+    border-radius: 12px; 
+    
+    /* Borda fina e moderna para dar acabamento */
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+    
+    /* Sombra projetada para dar profundidade ao player */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4); 
+    
+    /* Garante que o conteúdo do iframe respeite o arredondamento dos cantos */
+    overflow: hidden; 
+    display: block;
+}
+
 .hero-video video {
     width: 100%;
     border-radius: 12px;
